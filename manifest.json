@@ -1,0 +1,20 @@
+{
+	"name": "Fontify",
+	"version": "1.0",
+	"manifest_version":2,
+	"description": "This extension changes the specific div's font size",
+	
+	"content_scripts": [
+    {
+		"matches": [
+		  "<all_urls>"
+		],
+		"css": ["new.css"],
+		"run_at": "document_start",
+		"all_frames": true
+    }
+  ],
+  "icons": { "16": "bernie16.png",
+           "48": "bernie48.png",
+          "128": "bernie128.png" }
+}
